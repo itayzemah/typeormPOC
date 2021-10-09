@@ -1,0 +1,27 @@
+{
+  "type": "mssql",
+  "server": "DESKTOP-N1CTG5Q\\SQLEXPRESS",
+  "username": "itay",
+  "password": "123456",
+  "host": "localhost",
+  "port": 1433,
+  "extra": {
+    "driver": "msnodesqlv8",
+    "options": {
+      "validateConnection": false,
+      "trustServerCertificate": true,
+      "trustedConnection": true
+    }
+  },
+  "database": "typeormPOC",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
